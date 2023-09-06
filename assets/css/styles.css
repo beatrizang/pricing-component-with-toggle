@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --Linear-Gradient: linear-gradient(90deg, hsl(236, 72%, 79%) 0%,  hsl(237, 63%, 64%) 100%);
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+    --ff-montserrat: 'Montserrat', sans-serif;
+}
+
+body{
+    background: var(--Very-Light-Grayish-Blue);
+    background-image: url('../../images/bg-bottom.svg'), url('../../images/bg-top.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 550%, 100% 0%;
+    font-family: var(--ff-montserrat)
+}
+
+#container{
+    background: var(--Linear-Gradient);
+    position: relative;
+    width: 40px;
+    height: 20px;
+    box-shadow: inset 4px 4px 0px var(--Linear-Gradient),
+                inset -4px -4px 0px var(--Linear-Gradient);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: scale(.7);
+    background: var(--Very-Light-Grayish-Blue);
+    border-radius: 25px;
+
+}
