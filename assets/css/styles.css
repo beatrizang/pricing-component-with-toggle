@@ -75,7 +75,6 @@ body{
 
 #container.active .toggle{
     left: 20px;
-
 }
 
 .cards{
@@ -154,4 +153,44 @@ body{
 .card__middle .card__button:hover{
     background: transparent;
     color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        height: 100%;
+        padding: 2rem 0;
+    }
+
+    .cards{
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .card__middle{
+        margin: 2rem 0;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main{
+        height: 100%;
+        padding: 2rem 0;
+    }
+
+    .cards{
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card__middle{
+        margin: 2rem 0;
+        transform: scale(1);
+    }
 }
