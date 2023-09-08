@@ -73,6 +73,11 @@ body{
     border-radius: 25px;
 }
 
+#container.active .toggle{
+    left: 20px;
+
+}
+
 .cards{
     align-items: center;
     display: flex;
